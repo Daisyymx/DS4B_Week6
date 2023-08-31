@@ -34,6 +34,8 @@ head(data)
 ```{r}
 ggplot(data, mapping = aes(x = TempC, y = VO2_ml_per_h)) +
   geom_point() +
-  theme_bw()
+  theme_bw() +
+  xlab("Temprature") +
+  ylab("Metabolic rate (ml/h)") 
 ```
 
