@@ -14,8 +14,26 @@ output:
         fig_height: 4
 ---
 
+```{r}
+library(tidyverse)
+```
+
+
 # Bonus section
 
 ## Loading the data
 
+```{r}
+data <- read.csv("raw_data/data.csv")
+head(data)
+```
+
+
 ## An interesting plot
+
+```{r}
+ggplot(data, mapping = aes(x = TempC, y = VO2_ml_per_h)) +
+  geom_point() +
+  theme_bw()
+```
+
